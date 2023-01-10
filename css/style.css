@@ -1,0 +1,591 @@
+:root{
+    --mainColor:#1c1c1c;
+    --mainColor2:#f1f1f1;
+    /* --mainh2fs:calc(4rem+2vw)
+    --mainpfs:calc(1rem+2vh)
+    --mainh3fs:calc(1.5rem+2vh) */
+}
+p{
+   font-size: calc(1rem+2vw);
+}
+h2{
+   font-size: calc(4rem=2vw);
+}
+.bg-nav{
+   background-color: #1c1c1c80;
+}
+
+
+#Home {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+.overlay-home{
+    background-color:rgba(0, 0, 0, 0.596);
+    height: 100%;
+}
+
+.navbar-brand , .navbar-brand:hover , .nav-link , .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active{
+    color: #fff;
+   
+    
+}
+
+
+.line{
+    
+    position: relative;
+
+}
+
+.line::after{
+    content: "";
+    width: 2.5rem;
+    height: 2px;
+    position: absolute;
+    bottom: 0%;
+    left: 0.65rem;
+    background-color: #fff;
+
+
+
+}
+.nonline{
+    
+    position: relative;
+
+}
+
+.nonline::after{
+    content: "";
+    width: 0rem;
+    height: 2px;
+    position: absolute;
+    bottom: 0%;
+    left: 0.65rem;
+    background-color: #fff;
+
+transition: all 0.5s;
+
+}
+
+.nonline:hover::after{
+   width: 2.5rem;
+}
+.home-anmi{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.home-anmi::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
+    animation: home-anmi 6s infinite;
+    animation-timing-function: ease-in;
+    font-size: 5rem;
+    font-weight: 300;
+    /* background-color: aqua; */
+    width: 100%;
+
+}
+
+
+@keyframes home-anmi {
+     0%{
+        content: "I AM l|";
+     }
+     2%{
+        content: "I AM la|";
+     }
+     4%{
+        content: "I AM lar|";
+     }
+     6%{
+        content: "I AM larr|";
+     }
+     8%{
+        content: "I AM larry D|";
+     }
+     10%{
+        content: "I AM larry Da|";
+     }
+     12%{
+        content: "I AM larry Dan|";
+     }
+     14%{
+        content: "I AM larry Dani|";
+     }
+     16%{
+        content: "I AM larry Danie|";
+     }
+     18%{
+        content: "I AM larry Daniel|";
+     }
+     20%{
+        content: "I AM larry Daniels|";
+     }
+     22%{
+        content: "I AM larry Daniel|";
+     }
+     24%{
+        content: "I AM larry Danie|";
+     }
+     26%{
+        content: "I AM larry Dani|";
+     }
+     28%{
+        content: "I AM larry Dan|";
+     }
+     30%{
+        content: "I AM larry Da|";
+     }
+     32%{
+        content: "I AM larry D|";
+     }
+     34%{
+        content: "I AM larry |";
+     }
+     36%{
+        content: "I AM larr |";
+     }
+     38%{
+        content: "I AM lar|";
+     }
+     40%{
+        content: "I AM la|";
+     }
+     42%{
+        content: "I AM l|";
+     }
+     44%{
+        content: "I AM |";
+     }
+     46%{
+        content: "I AM D|";
+     }
+     48%{
+        content: "I AM De|";
+     }
+     50%{
+        content: "I AM Dev|";
+     }
+     52%{
+        content: "I AM Deve|";
+     }
+     54%{
+        content: "I AM Devel|";
+     }
+     56%{
+        content: "I AM Develo|";
+     }
+     58%{
+        content: "I AM Develop|";
+     }
+     60%{
+        content: "I AM Develope|";
+     }
+     62%{
+        content: "I AM Developer|";
+     }
+     64%{
+        content: "I AM Develope|";
+     }
+     66%{
+        content: "I AM Develop|";
+     }
+     68%{
+        content: "I AM Develo|";
+     }
+     70%{
+        content: "I AM Devel|";
+     }
+     72%{
+        content: "I AM Deve|";
+     }
+     74%{
+        content: "I AM Dev|";
+     }
+     76%{
+        content: "I AM De|";
+     }
+     78%{
+        content: "I AM D|";
+     }
+     80%{
+        content: "I AM |";
+     }
+     82%{
+        content: "I AM D |";
+     }
+     84%{
+        content: "I AM De |";
+     }
+     85%{
+        content: "I AM Des |";
+     }
+     86%{
+        content: "I AM Desi |";
+     }
+     87%{
+        content: "I AM Desig |";
+     }
+     88%{
+        content: "I AM Designe |";
+     }
+     89%{
+        content: "I AM Designer |";
+     }
+     90%{
+        content: "I AM Designe |";
+     }
+     90%{
+        content: "I AM Design |";
+     }
+     92%{
+        content: "I AM Desig |";
+     }
+     93%{
+        content: "I AM Desi |";
+     }
+     94%{
+        content: "I AM Des|";
+     }
+     95%{
+        content: "I AM De |";
+     }
+     96%{
+        content: "I AM D |";
+     }
+     100%{
+        content: "I AM  |";
+     }
+     
+    
+     
+       
+     }
+
+
+ .home-icon{
+    height: 30px;
+width: 30px; 
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.3);
+cursor: pointer;
+}
+    
+  
+
+
+.about-img{
+    position: relative;
+}
+
+
+.about-img::before{
+    content: "";
+background-image: url(../img/dots.png);
+width: 80%;
+height: 90%;
+position: absolute;
+
+
+right:28%;
+bottom: -5%;
+
+z-index: -5;
+}
+
+.progress-area{
+    height: 1.3rem;
+    background-color: #f1f1f1;
+    /* position: relative; */
+    box-shadow:  5px #f7f7f7;
+}
+.progress-bar {
+    background-color: var(--mainColor);
+}
+
+/* .progress-area::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0%;
+    right: 100%;
+    background-color: var(--mainColor);
+    animation: bar-progress1 3s  5s 
+}
+@keyframes bar-progress1 {
+    0%{
+        right: 100%;
+    }
+    100%{
+        right: 5%;
+    }
+    
+} */
+
+
+.btn1{
+    background-color: var(--mainColor);
+    color: #fff
+}
+.btn1:hover{
+    color: #fff;
+    color: var(--mainColor);
+}
+
+.wed-line{
+    position: relative;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.wed-line::after{
+    content: "";
+    background-image: url(../img/dots.png);
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+   z-index: -3;
+transform: translate(-50%,50%);    
+
+}
+
+#Services{
+    background-color: #f1f1f1;
+}
+
+.web-icon{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color:var(--mainColor2);
+    
+    color:  var(--mainColor);
+    display: flex;
+    align-items :  center;
+    justify-content:center;
+     transition: all 0.5s;
+
+
+}
+
+
+.service-box{
+    border-radius: 3%;
+}
+
+.service-box:hover .web-icon {
+    background-color: var(--mainColor);
+    color: var(--mainColor2);
+}
+
+
+.portfolio-choice a{
+   text-decoration: none;
+   color: var(--mainColor);
+   
+}
+.link-line{
+   position: relative;
+}
+
+
+.link-line::after{
+   content: "";
+   width: 1.5rem;
+   height: 2px;
+   position: absolute;
+   bottom: 0%;
+   left: 0rem;
+   background-color:var(--mainColor);
+}
+
+
+
+.work-item{
+position: relative;
+}
+
+.work-overlay{
+position: absolute;
+top: 20px;
+bottom: 0px;
+left: 5px;
+right: 5px;
+background-color:#fff;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+overflow: auto;
+transition: all 0.5s;
+}
+
+.work-item:hover .work-overlay{
+opacity: 1;
+top: 5px;
+bottom: 5px;
+
+
+
+
+} 
+.work-icons{
+   height: 30px;
+   width: 30px; 
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color:var(--mainColor);
+   cursor: pointer;
+   color: #fff;
+}
+
+
+.carousel-indicators [data-bs-target]{
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+    background-color: rgb(73, 70, 70);  
+    margin-top: 30px;
+ }  
+
+
+#Clients{
+   background-color: var(--mainColor2);
+}
+
+.count-anmi{
+   position: relative;
+}
+
+.count-anmi::after{
+   content: "";
+   position: absolute;
+   top:100%;
+   left: 40%;
+   transform: translateX(-100%);
+   transform: translateY(-150%);
+   animation: count-anmi 2s infinite ;
+   font-size: 2rem;
+   font-weight: 700;
+
+
+}
+
+@keyframes count-anmi {
+   0%{
+      content: "10";
+
+   }
+   10%{
+      content: "50";
+
+   }
+   20%{
+      content: "150";
+
+   }
+   30%{
+      content: "300";
+
+   }
+   40%{
+      content: "420";
+
+   }
+50%{
+      content: "540";
+
+   }
+
+   60%{
+      content: "600";
+
+   }
+ 70%{
+      content: "690";
+
+   }
+   80%{
+      content: "730";
+
+   }
+   90%{
+      content: "800";
+
+   }
+   100%{
+      content: "920";
+
+   }
+   
+}
+
+
+
+.blog-body a{
+   text-decoration: none;
+   
+}
+
+.blog-line{
+   position: relative;
+
+}
+.blog-line::after{
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background-color: var(--mainColor);
+   width: 100%;
+   height: 2px;
+}
+
+.blog-img img{
+   transition: all 0.5s;
+
+}
+
+.blog-img{
+   overflow: hidden;
+   box-sizing: border-box;
+
+}
+
+.blog-img:hover img{
+   transform: scale(1.3);
+}
+
+.web-icon:hover{
+   background-color: var(--mainColor);
+   color: var(--mainColor2);
+}
+
+.form-st{
+
+   border: none;
+   background-color:#f1f1f1;
+}
+
+
